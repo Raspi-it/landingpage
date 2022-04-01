@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* General */
+$background-color: #F3F3F3;
+
+/* Measurement */
+$overall-margin: 20px 20px 0 20px;
+
+/* Font */
+$base-font-color: #000000;
+$contrast-font-color: #FFFFFF;
+$highlight-font-color: #B50314;
+
+$f-fam: 'Poppins', sans-serif;
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    display: flex;
+    margin: $overall-margin;
+    .caption {
+        letter-spacing: 10px;
+        font-family: $f-fam;
+        color: $highlight-font-color;
+        font-size: 30px;
+    }
+    .caption:hover {
+        background-color: $highlight-font-color;
+        color: $contrast-font-color;
+    }
+    .menu-tabs {
+        margin-left: auto; 
+        float: right;
+        
+        li {
+            display: inline;
+            margin: 30px;
+            a {
+                font-family: $f-fam;
+                font-size: 20px;
+                color: $base-font-color;
+                text-decoration: none;
+            }
+            :hover {
+                color: $highlight-font-color
+            }
+        }
+    }
+}
+.highlights {
+    margin: $overall-margin;
+    margin-top: 5%;
+    .top {
+        font-family: $f-fam;
+        font-size: 40px;
+        color: $highlight-font-color;
+        float: left;
+        padding: 20px 0 0 0;
+        width: 30%;
+        box-sizing: border-box;
+
+        .normal {
+            margin-top: 10%;
+            font-size: 20px;
+            color: $base-font-color;
+        }
+    }
+    .highlights-caption {
+        float: left;
+        width: 40%;
+        padding: 20px 20px 0 0;
+        box-sizing: border-box;
+        color: $base-font-color;
+        font-family: $f-fam;
+        font-size: 60px;
+    }
+    .data-highlights {
+        float: right;
+        width: 60%;
+        .down {
+            float: left;
+            font-family: $f-fam;
+            font-size: 30px;
+            width: 80%;
+            margin-top: 5%;
+        }
+        .highlights-button {
+            float: right;
+            width: 20%;
+            margin-top: 5%;
+            padding: 20px;
+            background-color: $highlight-font-color;
+            text-align: center;
+            width: fit-content;
+            height: fit-content;
+            a {
+                text-decoration: none;
+                color: $contrast-font-color
+            }
+        }
+    }
+}

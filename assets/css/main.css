@@ -1,19 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-:root {
-
-    /* General */
-    --background-color: #F3F3F3;
-
-    /* Font */
-    --base-font-color: #000000;
-    --contrast-font-color: #FFFFFF;
-    --highlight-font-color: #B50314;
-
-    --f-fam: 'Poppins', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* General */
+/* Measurement */
+/* Font */
+html {
+  scroll-behavior: smooth;
 }
 
 .header {
-    font-family: var(--f-fam);
-    color: var(--highlight-font-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 20px 0 20px;
 }
+
+.header .caption {
+  letter-spacing: 10px;
+  font-family: "Poppins", sans-serif;
+  color: #B50314;
+  font-size: 30px;
+}
+
+.header .caption:hover {
+  background-color: #B50314;
+  color: #FFFFFF;
+}
+
+.header .menu-tabs {
+  margin-left: auto;
+  float: right;
+}
+
+.header .menu-tabs li {
+  display: inline;
+  margin: 30px;
+}
+
+.header .menu-tabs li a {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.header .menu-tabs li :hover {
+  color: #B50314;
+}
+
+.highlights {
+  margin: 20px 20px 0 20px;
+  margin-top: 5%;
+}
+
+.highlights .top {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  color: #B50314;
+  float: left;
+  padding: 20px 0 0 0;
+  width: 30%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.highlights .top .normal {
+  margin-top: 10%;
+  font-size: 20px;
+  color: #000000;
+}
+
+.highlights .highlights-caption {
+  float: left;
+  width: 40%;
+  padding: 20px 20px 0 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-size: 60px;
+}
+
+.highlights .data-highlights {
+  float: right;
+  width: 60%;
+}
+
+.highlights .data-highlights .down {
+  float: left;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  width: 80%;
+  margin-top: 5%;
+}
+
+.highlights .data-highlights .highlights-button {
+  float: right;
+  width: 20%;
+  margin-top: 5%;
+  padding: 20px;
+  background-color: #B50314;
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.highlights .data-highlights .highlights-button a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+/*# sourceMappingURL=main.css.map */
