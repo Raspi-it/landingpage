@@ -1,2 +1,2 @@
 # Landingpage
-This website should feature the work of F. Mechelke and also connect/referr ro his present pojects.
+This website should feature the work and projects of the PO and also connect/referr ro his current pojects.
