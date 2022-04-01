@@ -17,6 +17,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    margin: 0 0 0 0;
+}
+
 .header {
     display: flex;
     margin: $overall-margin;
@@ -100,5 +104,20 @@ html {
                 color: $contrast-font-color
             }
         }
+        .catchUp {
+            margin-top: 30px;
+            height: 100%;
+            width: 100%;
+        }
     }
+}
+
+.lookDown {
+    font-family: $f-fam;
+    margin: $overall-margin;
+    color: $base-font-color;
+}
+
+.lookDown:hover {
+    color: $highlight-font-color;
 }

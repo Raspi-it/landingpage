@@ -6,6 +6,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  margin: 0 0 0 0;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -110,5 +114,21 @@ html {
 .highlights .data-highlights .highlights-button a {
   text-decoration: none;
   color: #FFFFFF;
+}
+
+.highlights .data-highlights .catchUp {
+  margin-top: 30px;
+  height: 100%;
+  width: 100%;
+}
+
+.lookDown {
+  font-family: "Poppins", sans-serif;
+  margin: 20px 20px 0 20px;
+  color: #000000;
+}
+
+.lookDown:hover {
+  color: #B50314;
 }
 /*# sourceMappingURL=main.css.map */
