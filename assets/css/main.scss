@@ -29,6 +29,7 @@ body {
         font-family: $f-fam;
         color: $highlight-font-color;
         font-size: 30px;
+        transition: 0.3s;
     }
     .caption:hover {
         background-color: $highlight-font-color;
@@ -46,6 +47,7 @@ body {
                 font-size: 20px;
                 color: $base-font-color;
                 text-decoration: none;
+                transition: 0.3s;
             }
             :hover {
                 color: $highlight-font-color
@@ -112,12 +114,18 @@ body {
     }
 }
 
-.lookDown {
-    font-family: $f-fam;
-    margin: $overall-margin;
-    color: $base-font-color;
-}
-
-.lookDown:hover {
-    color: $highlight-font-color;
-}
+// .svg-lookDown {
+//     position: relative;
+//     .lookDown {
+//         font-family: $f-fam;
+//         color: $base-font-color;
+//         position: absolute;
+//         top: 90%;
+//         left: 50%;
+//         transform: translate(-50%, -50%);
+//     }
+//     .lookDown:hover {
+//         color: $highlight-font-color;
+//         transition: 0.3s;
+//     }
+// }

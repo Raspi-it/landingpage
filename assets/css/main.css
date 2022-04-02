@@ -22,6 +22,8 @@ body {
   font-family: "Poppins", sans-serif;
   color: #B50314;
   font-size: 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .header .caption:hover {
@@ -44,6 +46,8 @@ body {
   font-size: 20px;
   color: #000000;
   text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .header .menu-tabs li :hover {
@@ -120,15 +124,5 @@ body {
   margin-top: 30px;
   height: 100%;
   width: 100%;
-}
-
-.lookDown {
-  font-family: "Poppins", sans-serif;
-  margin: 20px 20px 0 20px;
-  color: #000000;
-}
-
-.lookDown:hover {
-  color: #B50314;
 }
 /*# sourceMappingURL=main.css.map */
