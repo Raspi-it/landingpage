@@ -6,6 +6,9 @@ $background-color: #F3F3F3;
 /* Measurement */
 $overall-margin: 20px 20px 0 20px;
 
+/* Background */
+$base-background-color: #000000;
+
 /* Font */
 $base-font-color: #000000;
 $contrast-font-color: #FFFFFF;
@@ -15,10 +18,11 @@ $f-fam: 'Poppins', sans-serif;
 
 html {
     scroll-behavior: smooth;
+    font-family: $f-fam;
 }
 
-body {
-    margin: 0 0 0 0;
+section {
+    min-height: 100vh;
 }
 
 .header {
@@ -29,10 +33,10 @@ body {
         font-family: $f-fam;
         color: $highlight-font-color;
         font-size: 30px;
-        transition: 0.3s;
+        transition: .3s;
     }
     .caption:hover {
-        background-color: $highlight-font-color;
+        background-color:  $highlight-font-color;
         color: $contrast-font-color;
     }
     .menu-tabs {
@@ -129,3 +133,42 @@ body {
 //         transition: 0.3s;
 //     }
 // }
+
+// Tabs
+
+.tab {
+    overflow: hidden;
+    display: flex;
+}
+
+.tab button {
+    font-family: $f-fam;
+    font-size: 30px;
+    background-color: $base-background-color;
+    color: $contrast-font-color;
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    border-style: none;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.tab button:hover {
+    background-color: $highlight-font-color;
+    color: $contrast-font-color;
+}
+
+.tab button.active {
+    background-color: $highlight-font-color;
+    color: $contrast-font-color;
+}
+
+.tabcontent {
+    display: none;
+    border-style: none;
+    padding: 6px 12px;
+}

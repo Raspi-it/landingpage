@@ -1,57 +1,83 @@
 <!DOCTYPE html>
 <html>
-    <head>
-<meta charset="UTF8">
-<title>Fabian Mechelke</title>
-<link rel="stylesheet" type="text/css" href="assets/css/main.css">
-<script src="script.js"></script>
-    </head>
+<head>
+    <meta charset="UTF8">
+    <title>Fabian Mechelke</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <script src="script.js"></script>
+</head>
         <body>
-            <div class="header">
-                <div class="caption">
-                    SmartHome
-                </div>
-                <div class="menu-tabs">
-                    <ul>
-                        <li><a href="#Pi-Hole">Pi-Hole</a></li>
-                        <li><a href="#Music">Music</a></li>
-                        <li><a href="#SmartKeeper">SmartKeeper</a></li>
-                    </ul>
-                </div>
-                <div class="menu-hamburger-top"></div>
-                <div class="menu-hamburger-down"></div>
-            </div>
-            <div class="highlights">
-                <div class="highlights-caption">
-                    Projects for everyone
-                </div>
-                <div class="data-highlights">
-                    <div class="top">
-                        8
-                        <div class="normal">Projects</div>
+            <section>
+                <div class="header">
+                    <div class="caption">
+                        SmartHome
                     </div>
-                    <div class="top">
-                        562
-                        <div class="normal">Files</div>
+                    <div class="menu-tabs">
+                        <ul>
+                            <li><a href="#Pi-Hole">Pi-Hole</a></li>
+                            <li><a href="#Music">Music</a></li>
+                            <li><a href="#SmartKeeper">SmartKeeper</a></li>
+                        </ul>
                     </div>
-                    <div class="top">
-                        1651691
-                        <div class="normal">Lines of Code</div>
-                    </div>
-                    <div class="down">
-                        DIY, RaspberryPi and Web for different UseCases
-                    </div>
-                    <div class="highlights-button">
-                        <a href="#projects">&darr;</a>
-                    </div>
-                    <img class="catchUp" src="assets/images/laptop.png" alt="laptop">
+                    <div class="menu-hamburger-top"></div>
+                    <div class="menu-hamburger-down"></div>
                 </div>
-            </div>
-            <div class="svg-lookDown">
-                <img src="assets/svg/Vector 1.svg" alt="Look down">
-                <div class="lookDown">
-                    Look down here ...
+                <div class="highlights">
+                    <div class="highlights-caption">
+                        Projects for everyone
+                    </div>
+                    <div class="data-highlights">
+                        <div class="top">
+                            8
+                            <div class="normal">Projects</div>
+                        </div>
+                        <div class="top">
+                            562
+                            <div class="normal">Files</div>
+                        </div>
+                        <div class="top">
+                            1651691
+                            <div class="normal">Lines of Code</div>
+                        </div>
+                        <div class="down">
+                            DIY, RaspberryPi and Web for different UseCases
+                        </div>
+                        <div class="highlights-button">
+                            <a href="#projects">&darr;</a>
+                        </div>
+                        <img class="catchUp" src="assets/images/laptop.png" alt="laptop">
+                    </div>
                 </div>
-            </div>
+                <!-- <div class="svg-lookDown">
+                    <img src="assets/svg/Vector 1.svg" alt="Look down">
+                    <div class="lookDown">
+                        Look down here ...
+                    </div>
+                </div> -->
+            </section>
+            <section>
+                <div class="sec-nav">
+                    <div class="tab">
+                        <button class="tablinks" onclick="openCity(event, '&lt;/div&gt;')"><img src="assets/svg/Programming.svg" alt="RaspberryPi Section"></button> <!-- wird dann zu Programmier Portfolio -->
+                        <button class="tablinks" onclick="openCity(event, 'Raspberry')"><img src="assets/svg/RaspberryPiIcon.svg" alt="RaspberryPi Section"></button> <!-- Raspberry Pi -> wird zu Pi Projects -->
+                        <button class="tablinks" onclick="openCity(event, 'Innovation')"><img src="assets/svg/InnovationLamp.svg" alt="Innovation Section"></button> <!-- Lampe -> wird zu Innovation -->
+                    </div>
+                    
+                    <div id="&lt;/div&gt;" class="tabcontent">
+                        <h3>&lt;/div&gt;</h3>
+                        <p>London is the capital city of England.</p>
+                    </div>
+                    
+                    <div id="Raspberry" class="tabcontent">
+                        <h3>Raspberry</h3>
+                        <p>Paris is the capital of France.</p>
+                    </div>
+                    
+                    <div id="Innovation" class="tabcontent">
+                        <h3>Innovation</h3>
+                        <p>Tokyo is the capital of Japan.</p>
+                    </div>
+                </div>
+            </section>
         </body>
     </html>
