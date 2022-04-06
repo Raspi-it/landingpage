@@ -183,21 +183,37 @@ section {
     }
 }
 
-.me {
-    display: flex;
-    .left-pres {
-        width: 80%;
-        h1 {
-            font-family: $f-fam;
-            color: $base-font-color;
-            margin: 0%;
-        }
-        .red {
-            margin: 0%;
-            color: $highlight-font-color;
-        }
+.left-pres {
+    float: left;
+    width: 60%;
+    padding-left: 5%;
+    h1 {
+        font-family: $f-fam;
+        color: $base-font-color;
     }
-    .right-pres {
-        width: 20%;
+    .red {
+        color: $highlight-font-color;
+    }
+}
+
+.right-pres {
+    float: right;
+    width: 40%;
+    position: relative;
+    margin: 1% 0 0 0;
+
+    .img1 {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        right: 0;
+    }
+    .img2 {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        right: 0;
     }
 }
