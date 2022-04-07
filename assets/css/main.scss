@@ -19,6 +19,7 @@ $f-fam: 'Poppins', sans-serif;
 html {
     scroll-behavior: smooth;
     font-family: $f-fam;
+    margin: 0;
 }
 
 section {
@@ -93,25 +94,29 @@ section {
             float: left;
             font-family: $f-fam;
             font-size: 30px;
-            width: 80%;
+            width: 90%;
             margin-top: 5%;
         }
+        a {
+            color: $contrast-font-color;
+        }
         .highlights-button {
-            float: right;
-            width: 20%;
             margin-top: 5%;
-            padding: 20px;
+            float: right;
+            width: 10%;
+            height: 100%;
             background-color: $highlight-font-color;
             text-align: center;
-            width: fit-content;
-            height: fit-content;
             a {
+                color: $contrast-font-color;
+                display: block;
+                height: 100%;
+                width: 100%;
                 text-decoration: none;
-                color: $contrast-font-color
             }
         }
         .catchUp {
-            margin-top: 30px;
+            vertical-align: bottom;
             height: 100%;
             width: 100%;
         }
@@ -182,6 +187,10 @@ section {
         }
     }
 }
+.top {
+    // height: 50vh;
+}
+
 
 .left-pres {
     float: left;
@@ -211,9 +220,24 @@ section {
     }
     .img2 {
         position: absolute;
-        height: 100%;
-        width: 100%;
+        // height: 100%;
+        // width: 100%;
         top: 0;
         right: 0;
     }
+    .learnMore {
+        color: $highlight-font-color;
+        font-size: 40px;
+        margin-top: 0;
+        text-align: center;
+    }
+}
+
+.bottom {
+    // height: 50vh;
+}
+
+.img3 {
+    border: #000000;
+    border-style: dashed;
 }
