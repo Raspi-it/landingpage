@@ -177,14 +177,36 @@ section {
     .tabcontent {
         display: none;
         border-style: none;
+        position: relative;
         img {
             filter: opacity(90%) grayscale(20%);
             display: block;
+            position: relative;
             max-width: 100vw;
             max-height: 100vh;
             width: auto;
             height: auto;
         }
+        .nav {
+            position: absolute;
+            background-color: $base-background-color;
+            top: 0;
+            left: 0;
+            ul {
+                padding: 0;
+                li {
+                    a {
+                        color: $contrast-font-color;
+                        text-decoration: none;
+                    }
+                }
+                li:hover a:hover{
+                    background-color: $contrast-font-color;
+                    color: $base-font-color;
+                }
+            }
+        }
+        
     }
 }
 .top {
