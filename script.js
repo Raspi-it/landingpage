@@ -1,4 +1,5 @@
-document.getElementById('</div>').style.display = "block";
+document.getElementById('div').style.display = "block";
+tablinks = document.getElementById("firstTab");
 tablinks.className += " active";
 
 function openCity(evt, cityName) {

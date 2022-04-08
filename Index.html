@@ -4,7 +4,6 @@
     <meta charset="UTF8">
     <title>Fabian Mechelke</title>
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-    <script src="script.js"></script>
 </head>
         <body>
             <section>
@@ -60,12 +59,12 @@
             <section id="work">
                 <div class="sec-tab">
                     <div class="tab">
-                        <button class="tablinks" onclick="openCity(event, '&lt;/div&gt;')"><img src="assets/svg/Programming.svg" alt="RaspberryPi Section"></button> <!-- wird dann zu Programmier Portfolio -->
+                        <button id="firstTab" class="tablinks" onclick="openCity(event, 'div')"><img src="assets/svg/Programming.svg" alt="RaspberryPi Section"></button> <!-- wird dann zu Programmier Portfolio -->
                         <button class="tablinks" onclick="openCity(event, 'Raspberry')"><img src="assets/svg/RaspberryPiIcon.svg" alt="RaspberryPi Section"></button> <!-- Raspberry Pi -> wird zu Pi Projects -->
                         <button class="tablinks" onclick="openCity(event, 'Innovation')"><img src="assets/svg/InnovationLamp.svg" alt="Innovation Section"></button> <!-- Lampe -> wird zu Innovation -->
                     </div>
                     
-                    <div id="&lt;/div&gt;" class="tabcontent">
+                    <div id="div" class="tabcontent">
                         <img src="assets/images/project-work.jpg" alt="Project work">
                     </div>
                     
@@ -101,4 +100,5 @@
                 </div>
             </section>
         </body>
+        <script src="script.js"></script>
     </html>
