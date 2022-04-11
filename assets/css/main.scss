@@ -191,16 +191,18 @@ section {
             position: absolute;
             background-color: $base-background-color;
             top: 0;
-            left: 0;
+            width: 30vw;
             ul {
                 padding: 0;
+                list-style: none;
                 li {
                     a {
                         color: $contrast-font-color;
+                        padding: 0 5% 0 5%;
                         text-decoration: none;
                     }
                 }
-                li:hover a:hover{
+                li:hover {
                     background-color: $contrast-font-color;
                     color: $base-font-color;
                 }
