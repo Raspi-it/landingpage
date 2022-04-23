@@ -16,10 +16,19 @@ $highlight-font-color: #B50314;
 
 $f-fam: 'Poppins', sans-serif;
 
+/* Layout */
+$layout-mobile: 899px;
+$layout-pc: 900px;
+
 html {
     scroll-behavior: smooth;
     font-family: $f-fam;
     margin: 0;
+    height:100%;
+}
+
+body {
+    height:100%;
 }
 
 section {
@@ -36,10 +45,6 @@ section {
         font-size: 30px;
         transition: .3s;
     }
-    .caption:hover {
-        background-color:  $highlight-font-color;
-        color: $contrast-font-color;
-    }
     .menu-tabs {
         margin-left: auto; 
         float: right;
@@ -54,15 +59,26 @@ section {
                 text-decoration: none;
                 transition: 0.3s;
             }
-            :hover {
-                color: $highlight-font-color
-            }
         }
     }
 }
+
+@media (min-width: $layout-pc) {
+    .header {
+        .caption:hover {
+            background-color: $highlight-font-color;
+            color: $contrast-font-color;
+        }
+        .menu-tabs li a:hover {
+            color: $highlight-font-color;
+        }
+    }
+}
+
 .highlights {
     margin: $overall-margin;
     margin-top: 5%;
+    height: 100%;
     .top {
         font-family: $f-fam;
         font-size: 40px;
@@ -90,6 +106,7 @@ section {
     .data-highlights {
         float: right;
         width: 60%;
+        height: 100%;
         .down {
             float: left;
             font-family: $f-fam;
@@ -116,9 +133,9 @@ section {
             }
         }
         .catchUp {
-            vertical-align: bottom;
             height: 100%;
             width: 100%;
+            justify-content: end;
         }
     }
 }
@@ -264,4 +281,38 @@ section {
 .img3 {
     border: #000000;
     border-style: dashed;
+}
+
+
+/* For Mobile */
+@media (max-width: $layout-mobile) {
+    .header {
+        flex-direction: column;
+        .caption {
+            width: 100vw;
+            text-align: center;
+        }
+        .menu-tabs {
+            position: relative;
+        }
+    }
+
+    .highlights {
+        flex-direction: column;
+        .highlights-caption {
+            width: 100vw;
+            text-align: center;
+        }
+        .data-highlights {
+            position: relative;
+            .top {
+                justify-content: center;
+                text-align: center;
+                .normal {
+                    justify-content: center;
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
